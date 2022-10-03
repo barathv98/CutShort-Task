@@ -1,0 +1,13 @@
+@import "../../constants/colors.scss";
+
+.title {
+    color: $black;
+    font-size: 26px;
+    text-align: center;
+}
+.subtitle {
+    color: $text-dark-grey;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 12px;
+}

@@ -1,0 +1,13 @@
+@import "../../constants/colors.scss";
+
+.btn_style {
+    width: 100%;
+    background-color: $base-color;
+    border: none;
+    color: $white;
+    height: 36px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 16px;
+}
