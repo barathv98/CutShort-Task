@@ -3,17 +3,21 @@ import "./styles.scss";
 import InnerTitle from "../InnerTitle/index";
 import CreateButton from "../CreateButton/index";
 import { secondPageTitle, secondPageSubTitle, createButtonText } from "../../constants/strings";
+import ProgressBar from "../ProgressBar/index";
 
 const SecondPage = () => {
     return (
         <div>
+            <ProgressBar />
             <InnerTitle title={secondPageTitle} subtitle={secondPageSubTitle} />
-            <label className="input_label">Workspace Name</label>
+            <div className="input_label">Workspace Name</div>
             <input type="text" className="input_text" placeholder="Eden"></input>
-            <label className="input_label">Workspace URL</label>
-            <span className="">(optional)</span>
+            <div className="split_label">
+                <span className="input_label">Workspace URL</span>
+                <span className="">(optional)</span>
+            </div>
             <div className="input_split">
-                <div className="">www.eden.com/</div>
+                <div className="split_default">www.eden.com/</div>
                 <input type="text" className="input_text" placeholder="Example"></input>
             </div>
             

@@ -1,3 +1,5 @@
+@import "../../constants/colors.scss";
+
 .input_text {
     display: block;
     height: 32px;
@@ -9,8 +11,21 @@
 }
 .input_label {
     font-weight: 600;
+    color: $label-text-grey;
+    font-weight: 14px;
+    margin-top: 12px;
+}
+.split_label {
+    margin-top: 12px;
 }
 .input_split {
     display: flex;
     flex-direction: row;
+    .split_default {
+        background-color: $bg-grey;
+        margin-top: 4px;
+        font-size: 14px;
+        padding: 7px 10px;
+        border: 0.3px solid $border-grey;
+    }
 }

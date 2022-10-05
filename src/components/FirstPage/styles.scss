@@ -1,3 +1,5 @@
+@import "../../constants/colors.scss";
+
 .input_text {
     display: block;
     height: 32px;
@@ -9,6 +11,8 @@
 }
 .input_label {
     font-weight: 600;
+    color: $label-text-grey;
+    font-weight: 14px;
 }
 .mt12 {
     margin-top: 12px;

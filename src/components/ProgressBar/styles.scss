@@ -1,0 +1,27 @@
+@import "../../constants/colors.scss";
+
+.progress_bar {
+    display: flex;
+    flex-direction: row;
+    margin-top: 58px;
+}
+.number_box {
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    background-color: $base-color;
+    position: relative;
+    .box_inner_text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+.number_line {
+    width: 40px;
+    height: 1px;
+    position: relative;
+    background-color: black;
+    top: 17px;
+}

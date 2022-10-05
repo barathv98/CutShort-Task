@@ -1,0 +1,41 @@
+@import "../../constants/colors.scss";
+
+.selection_container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 34px;
+    letter-spacing: -0.4px;
+    .plan_container {
+        padding: 16px;
+        height: 148px;
+        box-sizing: border-box;
+        width: 46%;
+        border: 0.3px solid $border-grey;
+        &.right {
+            margin-left: 8%;
+        }
+        .plan_icon {
+            width: 18px;
+            height: 18px;
+        }
+        .plan_title {
+            margin-top: 18px;
+            font-weight: bold;
+        }
+        .plan_text {
+            margin-top: 8px;
+            color: $text-dark-grey;
+            font-size: 14px;
+        }
+    }
+}
+.plan_container {
+    &.selected {
+        .plan_container {
+            border-color: $base-color;
+        }
+        .plan_icon {
+            fill: $base-color;
+        }
+    }
+}

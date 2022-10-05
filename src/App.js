@@ -13,9 +13,9 @@ function App() {
       <Title />
       <Routes>
         <Route path='/' element={<FirstPage />}></Route>
-        <Route path='/workspace-setup' element={<SecondPage />}></Route>
-        <Route path='/plan-selection' element={<ThirdPage />}></Route>
-        <Route path='/success' element={<SuccessPage />}></Route>
+        <Route path='/1' element={<SecondPage />}></Route>
+        <Route path='/2' element={<ThirdPage />}></Route>
+        <Route path='/3' element={<SuccessPage />}></Route>
       </Routes>
     </BasicContainer>
   );
