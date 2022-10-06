@@ -14,14 +14,18 @@ const SecondPage = () => {
         if (workspaceName.length > 0) {
             navigate("/2/"+displayName);
         }
+        else {
+            document.getElementById("workspaceName").classList.add("error");
+        }
     }
     return (
         <div>
             <ProgressBar step={2} />
             <InnerTitle title={secondPageTitle} subtitle={secondPageSubTitle} />
             <div className="input_label">Workspace Name</div>
-            <input type="text" className="input_text" placeholder="Eden"
-                onChange={e => setWorkspaceName(e.target.value)}></input>
+            <input type="text" className="input_text" placeholder="Eden" id="workspaceName"
+                onChange={e => setWorkspaceName(e.target.value)}
+                onFocus={e => e.target.classList.remove("error")}></input>
             <div className="split_label">
                 <span className="input_label">Workspace URL</span>
                 <span className="option-text">(optional)</span>
