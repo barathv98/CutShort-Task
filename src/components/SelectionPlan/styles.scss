@@ -10,16 +10,24 @@
         height: 148px;
         box-sizing: border-box;
         width: 46%;
-        border: 0.3px solid $border-grey;
+        border: 1px solid $text-grey;
+        border-radius: 4px;
+        cursor: pointer;
         &.right {
             margin-left: 8%;
         }
-        .plan_icon {
-            width: 18px;
-            height: 18px;
+        &.active {
+            border-color: $base-color;
+            svg {
+                fill: $base-color;
+            }
+        }
+        svg {
+            width: 24px;
+            height: 24px;
         }
         .plan_title {
-            margin-top: 18px;
+            margin-top: 10px;
             font-weight: bold;
         }
         .plan_text {

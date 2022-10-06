@@ -3,6 +3,8 @@
 .progress_bar {
     display: flex;
     flex-direction: row;
+    width: 70%;
+    margin: auto;
     margin-top: 58px;
 }
 .number_box {
@@ -10,7 +12,13 @@
     height: 33px;
     border-radius: 50%;
     background-color: $base-color;
+    color: $white;
     position: relative;
+    &.future {
+        background-color: $white;
+        color: $black;
+        border: 0.3px solid $text-grey;
+    }
     .box_inner_text {
         position: absolute;
         top: 50%;
@@ -19,9 +27,15 @@
     }
 }
 .number_line {
-    width: 40px;
+    width: 20%;
     height: 1px;
     position: relative;
-    background-color: black;
+    background: $base-color;
     top: 17px;
+    &.current {
+        background: linear-gradient(to right, $base-color, $base-color 50%, $text-grey 50%);
+    }
+    &.future {
+        background: $text-grey;
+    }
 }

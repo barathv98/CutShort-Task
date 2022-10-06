@@ -8,11 +8,13 @@
     margin-top: 4px;
     width: 100%;
     box-sizing: border-box;
+    border: 0.75px solid $text-grey;
+    border-radius: 4px;
 }
 .input_label {
     font-weight: 600;
     color: $label-text-grey;
-    font-weight: 14px;
+    font-size: 14px;
 }
 .mt12 {
     margin-top: 12px;

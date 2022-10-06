@@ -13,9 +13,9 @@ function App() {
       <Title />
       <Routes>
         <Route path='/' element={<FirstPage />}></Route>
-        <Route path='/1' element={<SecondPage />}></Route>
-        <Route path='/2' element={<ThirdPage />}></Route>
-        <Route path='/3' element={<SuccessPage />}></Route>
+        <Route path='/1/:displayName' element={<SecondPage />}></Route>
+        <Route path='/2/:displayName' element={<ThirdPage />}></Route>
+        <Route path='/3/:displayName' element={<SuccessPage />}></Route>
       </Routes>
     </BasicContainer>
   );

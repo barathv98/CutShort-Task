@@ -3,10 +3,10 @@ import React from "react";
 const GroupPerson = () => {
     return (
         <svg version="1.0" xmlns="http://www.w3.org/2000/svg"
-        width="22.000000pt" height="16.000000pt" viewBox="0 0 58.000000 50.000000"
+        width="22.000000pt" height="22.000000pt" fill="#000000" viewBox="0 0 58.000000 50.000000"
         preserveAspectRatio="xMidYMid meet">
         <g transform="translate(0.000000,50.000000) scale(0.100000,-0.100000)"
-        fill="#000000" stroke="none">
+        stroke="none">
         <path d="M251 394 c-16 -21 -18 -30 -10 -52 12 -32 26 -42 60 -42 54 0 80 74
         37 104 -33 23 -64 20 -87 -10z"/>
         <path d="M159 304 c-17 -21 0 -49 31 -49 31 0 48 28 31 49 -8 9 -21 16 -31 16

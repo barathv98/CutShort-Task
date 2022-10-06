@@ -5,14 +5,16 @@ import { successPageTitle, successPageSubTitle, successBtnText } from "../../con
 import "./styles.scss";
 import { BsCheck } from "react-icons/bs";
 import ProgressBar from "../ProgressBar/index";
+import { useParams } from "react-router-dom";
 
 const ThirdPage = () => {
-    const successString = successPageTitle.replace("${displayName}", "Eden");
+    const { displayName } = useParams();
+    const successString = successPageTitle.replace("${displayName}", displayName);
     return (
         <div>
-            <ProgressBar />
+            <ProgressBar step={4} />
             <div className="success_icon"><BsCheck className="check_white_icon" /></div>
-            <InnerTitle title={successString} subtitle={successPageSubTitle} />
+            <InnerTitle title={successString} subtitle={successPageSubTitle} step={4} />
             <CreateButton buttonText={successBtnText} />
         </div>
     )

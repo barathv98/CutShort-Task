@@ -8,6 +8,14 @@
     margin-top: 4px;
     width: 100%;
     box-sizing: border-box;
+    border: 0.75px solid $text-grey;
+    &.split {
+        border-radius: 0 4px 4px 0;
+    }
+}
+.option-text {
+    color: $label-text-grey;
+    font-size: 13px;
 }
 .input_label {
     font-weight: 600;
@@ -24,8 +32,11 @@
     .split_default {
         background-color: $bg-grey;
         margin-top: 4px;
-        font-size: 14px;
+        font-size: 12px;
         padding: 7px 10px;
-        border: 0.3px solid $border-grey;
+        border: 0.75px solid $text-grey;
+        color: $label-text-grey;
+        border-right: 0;
+        border-radius: 4px 0 0 4px;
     }
 }

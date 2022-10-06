@@ -7,4 +7,7 @@
     transform: translate(-50%, -50%);
     font-family: 'Inter';
     padding: 10px;
+    @media only screen and (max-width: 480px) {
+        width: 90%;
+    }
 }

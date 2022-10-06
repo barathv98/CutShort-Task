@@ -17,3 +17,5 @@ export const successPageSubTitle = "You have completed onboarding, you can start
 export const createButtonText = "Create Workspace";
 
 export const successBtnText = "Launch Eden";
+
+export const onboardingSteps = 4;
